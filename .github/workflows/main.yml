@@ -48,7 +48,7 @@ jobs:
         
 
       - name: Upload files to S3 Bucket
-        run: aws s3 cp ./files.csv s3://rosys3bucket1008 --recursive
+        run: aws s3 cp files.csv s3://rosys3bucket1008 --recursive
 
       - name: Terraform Destroy
         env:
