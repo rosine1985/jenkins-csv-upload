@@ -1,8 +1,8 @@
 resource "aws_s3_bucket" "s3_bucket" {
-  bucket = "JENKINS-CSV-UPLOAD-10-08"
+  bucket = "JENKINSCSVUPLOAD1008"
   acl    = "private"
   tags = {
-    Name        = "JENKINS-CSV-UPLOAD-10-08"
+    Name        = "JENKINSCSVUPLOAD1008"
     Environment = "dev"
   }
 }
@@ -26,7 +26,7 @@ resource "aws_s3_bucket_policy" "s3_bucket_policy" {
         "s3.DeleteBucket"
       ],
       "Resource": [
-        "arn:aws:s3:::JENKINS-CSV-UPLOAD-10-08/*"
+        "arn:aws:s3:::JENKINSCSVUPLOAD1008/*"
       ]
     }
   ]
