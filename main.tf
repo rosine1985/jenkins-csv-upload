@@ -5,6 +5,7 @@ resource "aws_s3_bucket" "s3_bucket" {
     Name        = "rosys3bucket1008"
     Environment = "dev"
   }
+  force_destroy = "true"
 }
 
 resource "aws_s3_bucket_policy" "s3_bucket_policy" {
